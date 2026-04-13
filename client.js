@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000'); // الربط بالسيرفر
+const socket = io(); // الربط بالسيرفر
 const sendBtn = document.getElementById('sendBtn');
 const messageInput = document.getElementById('messageInput');
 const messageContainer = document.getElementById('messageContainer');
