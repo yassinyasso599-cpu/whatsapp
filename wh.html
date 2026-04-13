@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="wh.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <header class="header">
+                <img src="https://via.placeholder.com/40" alt="Profile" class="avatar">
+            </header>
+            <div class="search-bar">
+                <input type="text" placeholder="بحث أو بدء دردشة جديدة">
+            </div>
+            <div class="chats-list">
+                <div class="chat-item active">
+                    <img src="https://via.placeholder.com/45" alt="User" class="avatar">
+                    <div class="chat-info">
+                        <h4>أحمد محمد</h4>
+                        <p>أزيك؟ عامل ايه؟</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-window">
+            <header class="header">
+                <div class="user-details">
+                    <img src="https://via.placeholder.com/40" alt="User" class="avatar">
+                    <span>أحمد محمد</span>
+                </div>
+            </header>
+            
+            <div class="message-container" id="messageContainer">
+                <div class="message received">أهلاً! كيف حالك؟</div>
+                <div class="message sent">الحمد لله بخير، وأنت؟</div>
+            </div>
+
+            <footer class="input-area">
+                <input type="text" id="messageInput" placeholder="اكتب رسالة...">
+                <button id="sendBtn">إرسال</button>
+            </footer>
+        </main>
+    </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="wh.js"></script>
+</body>
+</html>
